@@ -48,8 +48,8 @@ def ordem():
         print("Carro nao esta na lista")
     os.system("pause")
 def excluir():
-    pos = str(input("Nome: "))
-    for c in carros:
+    pos = int(input("Posicao: "))
+    for c in range(len(carros)):
         if c == pos:
             carros.pop(c)
     os.system("pause")   
@@ -66,8 +66,8 @@ def desligarCarro():
             c.desligar()
     os.system("pause") 
 def listar():
-    for c in carros:
-        print(carros[c])
+    for c in range(len(carros)):
+        carros[c].info()
     os.system("pause")
 def quant():
     print(len(carros))
