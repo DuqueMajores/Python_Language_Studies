@@ -1,6 +1,5 @@
 import os
 carros = []
-
 class Carro:
     nome = ""
     potencia = 0
